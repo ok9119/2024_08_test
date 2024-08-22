@@ -31,7 +31,7 @@ args = parser.parse_args()
 
 
 if Path(args.input).is_file():
-    processed_input = pd.read_csv(args.input, sep = '\t').drop(columns='Unnamed: 0')
+    processed_input = pd.read_csv(args.input, sep = ' ')
 else:
     raise Exception ('Input file does not exist')
 
